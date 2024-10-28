@@ -24,4 +24,4 @@ Este projeto foi desenvolvido para um evento musical da igreja, com o objetivo d
 
 Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/gabriel-leal/Inscricao-musical.git
