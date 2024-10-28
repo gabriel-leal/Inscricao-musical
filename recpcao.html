@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/recepcao.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>    
+    <title>Recepção</title>
+</head>
+<body>
+    <dialog>
+        <h2>Como usar</h2>
+        <p>A <i class="bi bi-search"></i> serve para pesquisar o convidado pelo nome ou pelo ID(código individual), para cada convidado presente clique no <i class="bi bi-check2"></i></p>
+        <button type="button" onclick="hideModal()">Fechar</button>
+    </dialog>
+    <main>
+        <div id="search-box">
+            <input type="text" id="searchInput" class="search-text" placeholder="Pesquisar" style="display: none;">
+            <a href="#">
+                <i class="bi bi-search" id="lupa"></i>
+            </a>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th><i class="bi bi-check2"></i></th>
+                </tr>
+            </thead>
+            <tbody class="card-container">
+                
+            </tbody>
+        </table>
+    </main>
+    <script src="scripts/recepcao.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+     <link rel="stylesheet" href="estilos/inscricao.css">
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <title>Inscrição do Evento ICCF</title>
+</head>
+<body>
+    <main>
+        <section id="cadastro">
+            <div id="imagem">
+            </div>
+            <div id="formulario">
+                <form action="#" id="idform" method="post" autocomplete="on">
+                    <p><label for="inome">*Nome Completo: </label></p>
+                    <p><input type="text" name="nome" id="inome" required autocomplete="name" minlength="10" maxlength="40" placeholder="Ex: João Silva Pereira"></p>
+                    <p><label for="idata">*Data De Nascimento: </label></p>
+                    <p><input type="tel" name="datanasc" id="idata" required autocomplete="bday" placeholder="Ex: 01/11/1965"></p>
+                    <p><label for="itel">Telefone: </label></p>
+                    <p><input type="tel" name="telefone" id="itel" autocomplete="tel" placeholder="Ex: (16) 99123-4567"></p>
+                    <div id="membro">
+                        <p>*Você é membro da igreja ou convidado?</p>
+                        <p><input type="radio" name="mem" id="imem" required checked><label for="imem">Membro</label></p>
+                        <p><input type="radio" name="mem" id="iconv"><label for="iconv">Convidado</label></p>
+                    </div>
+                    <div id="direitos">
+                        <p><input type="checkbox" name="direitos" id="idireitos" required>Eu concordo com os "Termos de Privacidade" <button type="button" onclick="showmodalP()">Leia Mais</button></p>
+                        <dialog id="politica">
+                            <h1>Política de Privacidade</h1>
+                            <p>
+                                A Igreja Cristã Castelo Forte valoriza a privacidade de seus membros e participantes. Esta Política de Privacidade explica como coletamos, usamos, armazenamos e protegemos as informações pessoais fornecidas pelos usuários em nosso site de inscrição para eventos.
+
+                                Informações Coletadas: Nome completo, número de telefone, data de nascimento, sendo informações necessárias para a inscrição no evento.
+                                
+                                Uso das Informações: As informações coletadas serão usadas para processar sua inscrição no evento. Utilizaremos sua data de nascimento para enviar felicitações em aniversários. As informações de contato podem ser usadas para comunicações relacionadas ao evento, incluindo atualizações e instruções.
+                                
+                                Compartilhamento de Informações: As suas informações não serão compartilhadas com terceiros, exceto conforme necessário para a execução dos serviços relacionados ao evento ou conforme exigido por lei.
+                                
+                                Segurança dos Dados: Implementamos medidas de segurança adequadas para proteger suas informações pessoais contra acesso não autorizado, alteração, divulgação ou destruição.
+                                
+                                Uso de Cookies: Utilizamos cookies para melhorar a funcionalidade do site e personalizar sua experiência. Você pode gerenciar suas preferências de cookies através das configurações do seu navegador.
+                                
+                                Alterações na Política de Privacidade: Podemos atualizar esta política de privacidade periodicamente. Notificaremos os usuários sobre quaisquer mudanças significativas através do site ou por e-mail.
+                                
+                                Agradecemos pela confiança em compartilhar suas informações conosco e estamos comprometidos em proteger sua privacidade.
+                            </p>
+                            <button type="button" onclick="hidemodalP()">Voltar</button>  
+                        </dialog>
+                    </div>
+                    <div id="error">
+                        <dialog id="error">
+                            <p>ERRO!</p>
+                            <p id="erro"></p>
+                            <button type="button" onclick="hidemodalE()">X</button>
+                        </dialog>
+                    </div>
+                    <input id="btn-send" type="submit" value="Inscrever-se">
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/inscricaoespera.js"></script>
+</body>
+</html>

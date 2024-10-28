@@ -1,0 +1,307 @@
+@charset "UTF-8";
+
+    /* Mobile */
+@media screen  {
+    * {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+
+    body, html {
+        background: url(../imagens/fundo.png) no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+
+    main {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    section#cadastro {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        overflow: hidden;
+        background-color: white;
+        width: 300px;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.468);
+        transform: translate(-50%, -50%);
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    section#cadastro > div#imagem {
+        display: block;
+        background: url(../imagens/logo-evento.png) no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 270px;
+        width: 300px;
+        margin: auto;
+    }
+
+    section#cadastro > div#formulario {
+        display: block;
+        padding: 9px;
+    }
+
+    div#formulario > h1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    p label, p input  {
+        color: #193B62;
+    }
+
+    form {
+        font-size: 1.1em;
+    }
+
+    form > p {
+        padding-bottom: 5px;
+    }
+
+    input {
+        font-size: 1.1em;
+        border-radius: 8px;
+        width: 100%;
+        outline: 0;
+        padding: 0px 0px 0px 10px;
+    }
+
+    input:focus-within {
+        background-color: #d750b633;
+    }
+
+    div#membro{
+        padding-top: 10px;
+    }
+
+    div#membro > p > input {
+        margin-top: 10px;
+        display: inline-block;
+        width: 10%;
+    }
+
+    div#direitos > p > input {
+        margin-top: 30px;
+        display: inline-block;
+        width: 10%;
+    }
+
+    div#direitos p {
+        color: #193B62;
+    }
+
+    input#idireitos {
+        cursor: pointer;
+    }
+
+    div#direitos button {
+        font-size: 1em;
+        font-weight: bold;
+        background-color: white;
+        color:  #8B4696;
+        border: 0px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    div#direitos dialog{
+        border: none;
+        border-radius: .5rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, .3);
+        margin: auto;
+        height: 80vh;
+        overflow-y: auto;
+        width: 80%;
+        padding: 20px;
+        background-color: #F5E9F9;
+        transform: scale(0.7);
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.5s ease;
+    }
+
+    div#direitos dialog.show {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    div#direitos dialog.hide {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    div#direitos dialog p {
+        text-align: center;
+    } 
+
+    div#direitos dialog h1{
+        font-size: 1.3em;
+        padding: 0px 2px 10px 15px;
+    }
+
+    dialog::backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    div#direitos dialog button {
+        background-color: #51348F;
+        color: white;
+        border-radius: 3px;
+        text-decoration: none;
+        border: 3px solid black;
+        padding: 3px;
+        margin-top: 10px;
+    }
+
+    div#direitos dialog button:hover{
+        background-color: #8969ce;
+        border: 3px solid #8969ce;
+    }
+
+    div#direitos button:hover {
+        text-decoration: none;
+    }
+
+    div#error dialog{
+        border: none;
+        border-radius: .5rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, .3);
+        margin: auto;
+        overflow-y: auto;
+        width: 50%;
+        padding: 20px;
+        background-color: rgb(255, 64, 64);
+        color: rgb(75, 5, 5);
+        transform: scale(0.7);
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.5s ease;
+    }
+
+    div#error dialog.show {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    div#error dialog.hide {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    div#error dialog p {
+        text-align: center;
+        font-size: 1.4em;
+    } 
+
+    div#error dialog h1{
+        font-size: 1.3em;
+        padding: 0px 2px 10px 15px;
+    }
+
+    dialog::backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    div#error dialog button {
+        background-color: darkred;
+        color: white;
+        border-radius: 3px;
+        text-decoration: none;
+        border: 2px solid black;
+        padding: 5px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    div#error dialog button:hover{
+        background-color: rgb(207, 31, 31);
+        border: 2px solid rgb(207, 31, 31);
+    }
+
+    input::placeholder {
+        padding-left: 7px;
+    }
+
+    form > input[type=date] {
+        padding-left: 2px;
+
+    }
+
+    form > input[type=submit] {
+        display: block;
+        font-size: 1em;
+        width: 100%;
+        height: 40px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        background-color: #51348F;
+        color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+
+    form > input[type=submit]:hover {
+        background-color: #8f71d1;
+    }
+
+    form > input[type=submit]:active {
+        transform: scale(.9);
+    }
+
+    div#msg {
+        padding-top: 10px;
+        font-size: 1.1em;
+
+    }
+
+    .no-scroll{
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+    }
+}
+
+
+    /* Tablet e desktops */
+@media screen and (min-width: 769px) { 
+
+    section#cadastro {
+        width: 510px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    section#cadastro > div#imagem{
+        margin-top: 5px;
+        height: 300px;
+        width: 380px;
+        border-radius: 10px;
+    }
+
+    div#formulario > p {
+        font-size: 1em;
+        margin: 15px 0px;
+    }
+
+    div#direitos dialog {
+        width: 60vw;
+        height: 60vh;
+    }
+
+    div#direitos dialog h1 {
+        text-align: center;
+    }
+}

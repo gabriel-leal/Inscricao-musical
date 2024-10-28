@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/dependentes.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <title>Inscrição do Evento ICCF</title>
+</head>
+<body>
+    <main>
+        <section id="cadastro">
+            <div id="imagem">
+            </div>
+            <div id="formulario">
+                <h1>Adicione dependentes para <span id="pai"></span></h1>
+                <form action="#" method="post">
+                    <p><label for="inome">*Nome Completo: </label></p>
+                    <p><input type="text" name="nome" id="inome" required autocomplete="name" minlength="10" maxlength="40" placeholder="Ex: João Silva Pereira"></p>
+                    <p><label for="idata">*Data De Nascimento: </label></p>
+                    <p><input type="tel" name="datanasc" id="idata" required autocomplete="bday" placeholder="Ex: 01/11/1965"></p>
+                    <p><label for="itel">Telefone: </label></p>
+                    <p><input type="tel" name="telefone" id="itel" autocomplete="tel" placeholder="Ex: (16) 99123-4567"></p>
+                    <div id="membro">
+                        <p>*Ele(a) é membro da igreja ou convidado?</p>
+                        <p><input type="radio" name="mem" id="imem" required checked><label for="imem">Membro</label></p>
+                        <p><input type="radio" name="mem" id="iconv"><label for="iconv">Convidado</label></p>
+                    </div>
+                    <button id="enviar" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <section id="tabela">
+            
+        </section>
+    </main>
+    <script src="scripts/dependentes.js"></script>
+</body>
+</html>

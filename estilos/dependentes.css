@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+    /* Mobile */
+@media screen  {
+    * {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+
+    body, html {
+        background: url(../imagens/fundo.png) no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+
+    main {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        margin-bottom: 25px;
+    }
+
+    section#cadastro {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        overflow: hidden;
+        background-color: white;
+        width: 300px;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.468);
+        transform: translate(-50%, -50%);
+        margin-top: 30px;
+    }
+
+    section#cadastro > div#imagem {
+        display: block;
+        background: url(../imagens/logo-evento.png) no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 250px;
+        width: 287px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    section#cadastro > div#formulario {
+        display: block;
+        padding: 9px;
+    }
+
+    div#formulario > h1 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-weight: normal;
+        font-size: 1.2em;
+        color: #193B62;
+    }
+
+    div#formulario > h1 > span{
+        font-weight: bolder;
+        font-size: 1.2em;
+        color: #193B62;
+    }
+
+    p label, p input  {
+        color: #193B62;
+    }
+
+    form {
+        font-size: 1.1em;
+    }
+
+    form > p {
+        padding-bottom: 5px;
+    }
+
+    input {
+        font-size: 1.1em;
+        border-radius: 8px;
+        width: 100%;
+        outline: 0;
+        padding: 0px 0px 0px 10px;
+    }
+
+    input:focus-within {
+        background-color: #d750b633;
+    }
+
+    div#membro{
+        padding: 10px;
+        color:#193B62;
+    }
+
+    div#membro > p > input {
+        margin-top: 10px;
+        display: inline-block;
+        width: 10%;
+    }
+
+    input::placeholder {
+        padding-left: 7px;
+    }
+
+    form > input[type=date] {
+        padding-left: 2px;
+
+    }
+
+    div#msg {
+        padding-top: 10px;
+        font-size: 1.1em;
+
+    }
+
+    form a {
+        color: #06265B;
+        margin-left: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+    }
+
+    form a:hover {
+        text-decoration: none;
+    }
+
+    button#nvdependente {
+        display: block;
+        margin: auto;
+        padding: 5px;
+        background-color: transparent;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+    }
+
+    button#enviar {
+        display: block;
+        margin: auto;
+        width: 260px;
+        border-radius: 3px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        padding: 5px;
+        background-color: #51348F;
+        color: white;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+
+    button#enviar:hover {
+        background-color: #8f71d1;
+        transition: all 0.2s;
+    }
+
+    button#enviar:active {
+        transform: scale(.9);
+    }
+
+    .error {
+        color: red;
+    }
+    .success {
+        color: green;
+    }
+}
+
+
+    /* Tablet e desktops */
+@media screen and (min-width: 769px) { 
+
+    section#cadastro {
+        width: 500px;
+    }
+
+    div#formulario > p {
+        font-size: 1em;
+        margin: 15px 0px;
+    }
+
+    form a {
+        margin-left: 109px;
+        font-size: 1.1em;
+    }
+
+    button#nvdependente {
+        font-size: 1.1em;
+    }
+
+    button#enviar {
+        width: 400px;
+        font-size: 1.1em;
+    }
+
+}
