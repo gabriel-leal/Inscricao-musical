@@ -21,7 +21,7 @@ Este projeto foi desenvolvido para um evento musical da igreja, com o objetivo d
   - **Fetch API** para comunicação assíncrona entre o frontend e o backend.
   - **Uvicorn** como servidor ASGI para rodar a aplicação.
  
-  - - **Banco De Dados:**
+- **Banco De Dados:**
   - SQLite
 
 
