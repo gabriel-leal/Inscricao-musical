@@ -20,6 +20,9 @@ Este projeto foi desenvolvido para um evento musical da igreja, com o objetivo d
   - Python com **FastAPI** para construção das APIs e gerenciamento do backend.
   - **Fetch API** para comunicação assíncrona entre o frontend e o backend.
   - **Uvicorn** como servidor ASGI para rodar a aplicação.
+ 
+  - - **Banco De Dados:**
+  - SQLite
 
 
 Clone este repositório:
