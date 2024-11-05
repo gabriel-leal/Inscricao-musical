@@ -23,6 +23,9 @@ Este projeto foi desenvolvido para um evento musical da igreja, com o objetivo d
  
 - **Banco De Dados:**
   - SQLite
+ 
+- **Demosntração**
+  - https://gabriel-leal.github.io/inscricao-evento/
 
 
 Clone este repositório:
